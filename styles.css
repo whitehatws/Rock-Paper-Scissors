@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    background-color: darkgray;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 6rem;
+}
+
+.selection:hover {
+    transform: scale(1.4);
+    transition: 140ms;
+}
+
+.results {
+    display: grid;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 400px;
+}
+
+.scoreResult {
+    color: rgb(39, 39, 39);
+    font-size: 3rem;
+    margin-left: .2rem;
+}
+
+.resultSelection {
+    opacity: .5;
+}
+
+.resultSelection.winner {
+    opacity: 1;
+    font-size: 3rem;
+}
